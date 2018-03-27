@@ -1,0 +1,214 @@
+<div id="header-sroll"><div id="icon"><img src="kk.jpg" alt="" width="10%" height="50px" />  Proshberg Fotbol Management</div>
+  </div>
+<style>
+
+.header {
+    height:70px;
+   
+}
+
+#header-sroll {
+    position:fixed;
+    height: 70px;
+    background: green;
+    border-radius: 2px;
+    left:0;
+    top:0;
+    float:left;
+    width:100%;
+    -ms-transition:     all 0.3s ease-out;
+    -moz-transition:    all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition:      all 0.3s ease-out;
+    transition:         all 0.3s ease-out;
+}
+#header-sroll h1 {
+    font-size: 20px;
+    font-family: Arial;
+    text-align: left;
+    line-height: 50px;
+     -ms-transition:    all 0.3s ease-out;
+    -moz-transition:    all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition:      all 0.3s ease-out;
+    transition:         all 0.3s ease-out;
+}
+#header-sroll.small {
+    height: 70px;
+    line-height: 35px;
+}
+#header-sroll.small h1{
+    height: 70px;
+    line-height: 35px;
+    font-size: 25px;
+}
+
+
+
+#login_bar{
+width:250px;        
+position:fixed;
+z-index:10;        
+border:0px solid black;   
+top: -13px;
+right:5px;
+display:inline-block;
+}
+
+#header{
+width:1000px;    
+background-image:url('../images/hf1.jpg'); 
+background-size: 100%;
+background-repeat: no-repeat;
+position: relative;
+border-radius:5px;
+min-height: 100px;
+}
+
+#login_signup{
+float:right;   
+/*display:inline; */
+}
+
+#login_signup > li{
+float:left;    
+padding-right: 30px;
+list-style: none;
+line-height:25px;
+padding-top:6px;
+display:inline-block;           
+}
+
+#login_signup li > a{
+font-family:sans-serif;
+font-size: 17px;
+font-weight: bold;
+color:white;
+padding:5px;
+display:inline-block;
+background-color: blue;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius: 5px;
+-o-border-radius:5px;
+
+box-shadow: rgb(0,0,0) 0px 0px 10px;
+-moz-box-shadow: rgb(0,0,0) 0px 0px 10px;
+-webkit-box-shadow: rgb(0,0,0) 0px 0px 10px;
+-o-box-shadow:rgb(0,0,0) 0px 0px 10px;
+}
+
+#login_signup li span{  
+font-size: 12px;        
+display:inline-block;
+}
+
+#login_signup li a:hover{
+cursor: pointer;
+box-shadow: rgb(255,255,255) 0px 0px 5px;
+-moz-box-shadow: rgb(255,255,255) 0px 0px 5px;
+-webkit-box-shadow: rgb(255,255,255) 0px 0px 5px;
+-o-box-shadow:rgb(255,255,255) 0px 0px 5px;
+border-radius: 2px;
+background-color: white;    
+color:#006666;
+}
+</style>
+<form id="msform">
+  <fieldset>
+    <h2 class="fs-title">Create Your Account</h2>
+    <h3 class="fs-subtitle">FILL IN TO REGISTER</h3>
+    <input type="text" name="email" placeholder="Email" />
+    <input type="password" name="pass" placeholder="Password" />
+    <input type="password" name="cpass" placeholder="Confirm Password" />
+    <input type="button" name="next" class="next action-button" value="SUBMIT" />
+  </fieldset>
+</form>
+
+
+<style>
+html, body{
+  height: 80%;
+}
+body { 
+			
+			background-position: center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #313248;
+                        
+}
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+
+/*form styles*/
+#msform {
+	width: 400px;
+	margin: 150px 880;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+</style>

@@ -1,0 +1,701 @@
+<div id="header-sroll"><div id="icon"><img src="kk.jpg" alt="" width="10%" height="50px" /></div>
+  </div>
+<style>
+
+.header {
+    height:50px;
+}
+
+#header-sroll {
+    position:fixed;
+    height: 57px;
+    background: green;
+    border-radius: 2px;
+    left:0;
+    top:0;
+    float:left;
+    width:100%;
+    -ms-transition:     all 0.3s ease-out;
+    -moz-transition:    all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition:      all 0.3s ease-out;
+    transition:         all 0.3s ease-out;
+}
+#header-sroll h1 {
+    font-size: 20px;
+    font-family: Arial;
+    text-align: left;
+    line-height: 50px;
+     -ms-transition:    all 0.3s ease-out;
+    -moz-transition:    all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition:      all 0.3s ease-out;
+    transition:         all 0.3s ease-out;
+}
+#header-sroll.small {
+    height: 70px;
+    line-height: 35px;
+}
+#header-sroll.small h1{
+    height: 70px;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+
+
+#p_bar{
+width:250px;        
+position:fixed;
+z-index:10;        
+border:0px solid black;   
+top: -13px;
+right:5px;
+display:inline-block;
+}
+
+#header{
+width:1000px;    
+background-image:url('../images/hf1.jpg'); 
+background-size: 100%;
+background-repeat: no-repeat;
+position: relative;
+border-radius:5px;
+min-height: 100px;
+}
+
+#g_p{
+float:right;   
+/*display:inline; */
+}
+
+#g_p > li{
+float:left;    
+padding-right: 30px;
+list-style: none;
+line-height:25px;
+padding-top:6px;
+display:inline-block;           
+}
+
+#g_p li > a{
+font-family:sans-serif;
+font-size: 17px;
+font-weight: bold;
+color:white;
+padding:5px;
+display:inline-block;
+background-color: blue;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius: 5px;
+-o-border-radius:5px;
+
+box-shadow: rgb(0,0,0) 0px 0px 10px;
+-moz-box-shadow: rgb(0,0,0) 0px 0px 10px;
+-webkit-box-shadow: rgb(0,0,0) 0px 0px 10px;
+-o-box-shadow:rgb(0,0,0) 0px 0px 10px;
+}
+
+#g_p li span{  
+font-size: 12px;        
+display:inline-block;
+}
+
+#g_p li a:hover{
+cursor: pointer;
+box-shadow: rgb(255,255,255) 0px 0px 5px;
+-moz-box-shadow: rgb(255,255,255) 0px 0px 5px;
+-webkit-box-shadow: rgb(255,255,255) 0px 0px 5px;
+-o-box-shadow:rgb(255,255,255) 0px 0px 5px;
+border-radius: 2px;
+background-color: white;    
+color:#006666;
+}
+</style>
+<div id="wrapper">
+    <div id="p_bar" style="text-align: right">                                               
+        <ul id="g_p">
+            <li><a href="index.html" id="login_link">Back<span>&#x25c0;</span></a></li>  
+        </ul>
+    </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <media-layout :flipped="true">
+      <image-one />
+    </media-layout>
+    
+    <media-layout>
+      <image-two />
+    </media-layout>
+    
+    <media-layout :flipped="true">
+      <image-three />
+    </media-layout>
+    
+  </main>
+</div>
+<main>
+<h2 align="center"><A NAME="sponsors"><font color="black">GALLARY</font></h2>
+<img src="scout.jpg" alt="" width="100%" height="400px" />
+<BR>
+<br>
+<img src="d.jpg" alt="" width="100%" height="400px" />
+<BR>
+<br>
+<img src="b.jpg" alt="" width="100%" height="400px" />
+<BR>
+<br>
+<img src="kk.jpg" alt="" width="100%" height="400px" />
+
+                                                                            
+
+
+
+
+
+
+</main>
+
+<!--medialayout-->
+<script type="text/x-template" id="medialayout">
+<div :class="[flipped ? 'media-flip' : '', media]">
+  <div class="img">
+    <slot></slot>
+  </div>
+  <h2 class="title">This is my title</h2>
+  <div class="content">
+
+  </div>
+  <div class="footer">
+    Tenetur recusandae iste at saepe magni omnis similique nobis tempore, pariatur et quae! 
+  </div>
+</div>
+</script>
+
+<!--imagearea1-->
+<script type="text/x-template" id="imagearea1">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.86 26.68" class="one">
+    <defs>
+      <radialGradient id="radial-gradient" cx="9.36" cy="15.58" r="9.56" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#03037f"/>
+        <stop offset="0.23" stop-color="#03037c"/>
+        <stop offset="0.4" stop-color="#030372"/>
+        <stop offset="0.56" stop-color="#020262"/>
+        <stop offset="0.7" stop-color="#02024b"/>
+        <stop offset="0.84" stop-color="#01012d"/>
+        <stop offset="0.97" stop-color="#000009"/>
+        <stop offset="1"/>
+      </radialGradient>
+      <clipPath id="clip-path" transform="translate(1.17 4.19)">
+        <path v-clipscroll="{ start: '50', end: '100', toPath: 'M0.39 0.34H15.99V22.44H0.39z' }" id="poly-shapemorph" d="M12.46 20.76L7.34 22.04 3.67 18.25 5.12 13.18 10.24 11.9 13.91 15.69 12.46 20.76z" class="cls-1"/>
+      </clipPath>
+    </defs>
+
+    <g clip-path="url(#clip-path)">
+      <rect class="cls-2" x="1.56" y="4.53" width="15.6" height="22.1"/>
+      <g v-drawscroll="{ start: '50', end: '100' }" class="paths">
+        <path class="cls-4" d="M4.08,16.86c1.44.13,3.06,5.72,4.6,5.5s1.59-6,3.09-6.53c1.35-.44,4.83,4.25,6.26,3.58,1.28-.62-.08-6.32,1.27-7.12s5.48,3.25,6.76,2.36c1.59-1,.15-6.82,1.82-7.89s6.1,2.85,7.81,2,1.72-6.91,3.57-7.3S43,6.55,45,7c1.71.4,5.74-3.89,7.51-2.62" transform="translate(1.17 4.19)"/>
+        <path class="cls-5" d="M3.79,16.38c1.47.29,2.78,5.92,4.36,5.73s1.65-6,3.18-6.56c1.37-.48,5,4.12,6.43,3.38s-.15-6.35,1.21-7.2,5.59,3.15,6.89,2.23C27.46,13,26,7.09,27.69,6s6.13,2.86,7.86,2,1.79-6.92,3.67-7.3S43,5.82,45,6.25c1.74.37,5.7-4,7.51-2.78" transform="translate(1.17 4.19)"/>
+        <path class="cls-6" d="M3.47,15.83c1.5.45,2.5,6.11,4.11,6s1.74-6,3.31-6.57c1.39-.5,5.11,4,6.57,3.24s-.19-6.4,1.19-7.28,5.67,3.05,7,2.12c1.61-1,.17-6.91,1.86-8s6.14,2.88,7.89,2S37.27.44,39.17.05s3.9,5.1,5.9,5.48c1.79.35,5.66-4.12,7.51-2.94" transform="translate(1.17 4.19)"/>
+        <path class="cls-7" d="M3.11,15.23c1.52.6,2.23,6.27,3.85,6.16s1.87-6,3.47-6.56c1.41-.53,5.21,3.92,6.69,3.11s-.2-6.44,1.19-7.34,5.75,3,7.1,2c1.64-1.07.22-6.94,1.93-8s6.14,2.9,7.92,2.07S37.2-.19,39.12-.58s4,5.1,6,5.45C47,5.18,50.72.61,52.6,1.72" transform="translate(1.17 4.19)"/>
+        <path class="cls-8" d="M2.92,14.66c3.24,1.94,6.45,6.43,10.17,4.73C16,18,16.36,11,19.61,8.8c2.94-2,9,.72,12.15-1s5-8.46,8.52-8.92S46.4,4.22,50.06,6" transform="translate(1.17 4.19)"/>
+        <path class="cls-9" d="M2.35,13.84c3.29,2.05,6.46,6.62,10.22,5,3-1.32,3.44-8.36,6.75-10.59,3-2,9,.71,12.27-1s5.05-8.49,8.63-9,6.25,5.3,10,7" transform="translate(1.17 4.19)"/>
+        <path class="cls-10" d="M1.77,13C5.1,15.09,8.22,19.76,12,18.18c3.07-1.27,3.64-8.33,7-10.56,3.05-2,9.11.74,12.39-1s5.13-8.51,8.75-9,6.38,5.26,10.14,7" transform="translate(1.17 4.19)"/>
+        <path class="cls-11" d="M1.17,12c3.37,2.22,6.45,7,10.28,5.49C14.58,16.28,15.3,9.21,18.73,7c3.09-2,9.16.8,12.5-1s5.21-8.52,8.87-9,6.51,5.23,10.31,6.89" transform="translate(1.17 4.19)"/>
+        <path class="cls-12" d="M.77,11.15c1.53,1.24,1,6.9,2.63,7.09S6.18,12.64,7.94,12C9.49,11.5,13.39,15.87,15,15s.05-6.62,1.57-7.59,5.95,2.93,7.46,2c1.74-1.1.71-7.08,2.52-8s6,3.36,7.91,2.67S37-2.69,39-3s4.3,5.18,6.39,5.33,5.07-5,7.12-4.33" transform="translate(1.17 4.19)"/>
+        <path class="cls-13" d="M.2,10.14c1.53,1.34.82,7,2.43,7.23s3-5.49,4.78-6.09c1.57-.52,5.45,3.87,7.09,3s.15-6.66,1.7-7.62,6,3,7.51,2.09c1.76-1.1.87-7.09,2.71-8s5.92,3.51,7.86,2.86S37-3.06,39-3.36,43.33,1.86,45.43,2s4.93-5.14,7-4.58" transform="translate(1.17 4.19)"/>
+        <path class="cls-14" d="M-.39,9.08c1.53,1.41.65,7,2.26,7.36s3.17-5.4,5-6c1.6-.51,5.45,3.91,7.13,3,1.52-.83.26-6.69,1.84-7.64s6,3,7.54,2.19c1.8-1.08,1.05-7.1,2.92-7.95s5.83,3.69,7.81,3.1S36.94-3.4,39-3.67s4.36,5.27,6.47,5.36,4.79-5.26,6.88-4.81" transform="translate(1.17 4.19)"/>
+        <path class="cls-15" d="M-1,8c1.53,1.48.51,7.11,2.11,7.47,1.76.38,3.35-5.3,5.19-5.85,1.64-.49,5.45,4,7.15,3.06s.39-6.72,2-7.66S21.39,8.12,23,7.31c1.83-1.06,1.26-7.1,3.16-7.89S31.9,3.3,33.92,2.77s3-6.47,5.11-6.7,4.36,5.33,6.48,5.39,4.65-5.38,6.76-5" transform="translate(1.17 4.19)"/>
+      </g>
+    </g>
+  </svg>
+</script>
+
+<!--imagearea2-->
+<script type="text/x-template" id="imagearea2">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.86 26.68" class="two">
+  <defs>
+    <radialGradient id="radial-gradient3" cx="7.93" cy="8.53" r="6.83" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4c51f4"/>
+      <stop offset=".21" stop-color="#4b50ef"/>
+      <stop offset=".46" stop-color="#474ce1"/>
+      <stop offset=".71" stop-color="#4147cb"/>
+      <stop offset=".98" stop-color="#383fab"/>
+      <stop offset="1" stop-color="#373ea8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="27.61" cy="15.51" r="9.58" xlink:href="#radial-gradient3"/>
+    <clipPath id="clip-path2" transform="translate(18.79 3.97)">
+       <path v-clipscroll="{ start: '350', end: '400', toPath: 'M1.02 0.51H16.62V22.610000000000003H1.02z' }" id="wiggleshape" d="M2.62,2.78s2-2,3,0,2.65.34,2.65.34,3.35-4.34,3.35-1.34S8.27,7.91,8.27,7.91s3.35,4.87,4.35.87,1,5,1,5-3,4-5,2-3-6-4-5-3-2-2-4,1.5-3,.25-2.5S2.62,2.78,2.62,2.78Z"/>
+    </clipPath>
+  </defs>
+  
+  <g clip-path="url(#clip-path2)">
+    <path fill="url(#radial-gradient-2)" d="M19.81 4.43H35.41V26.58H19.81z"/>
+    <g v-drawscroll="{ start: '250', end: '300' }" fill="none" stroke-miterlimit="10">
+      <path stroke="#011eff" stroke-width=".25" d="M-13.54,17.08c1.44.13,3.06,5.72,4.61,5.5,1.4-.2,1.58-6,3.08-6.53C-4.5,15.61-1,20.3.41,19.63s-.07-6.32,1.27-7.12,5.48,3.25,6.76,2.36C10,13.9,8.59,8,10.26,7s6.1,2.85,7.81,2,1.72-6.91,3.57-7.3,3.74,5.1,5.7,5.55c1.71.39,5.74-3.89,7.51-2.62" transform="translate(18.79 3.97)"/>
+      <path stroke="#181bf5" stroke-width=".273" d="M-13.83,16.6c1.47.29,2.78,5.92,4.36,5.73s1.65-6,3.18-6.56c1.37-.48,5,4.11,6.43,3.38S0,12.8,1.35,12s5.59,3.15,6.89,2.23c1.61-1,.16-6.87,1.83-7.94s6.13,2.86,7.86,2,1.8-6.91,3.67-7.3S25.42,6,27.4,6.46c1.74.38,5.7-4,7.51-2.77" transform="translate(18.79 3.97)"/>
+      <path stroke="#2f19ea" stroke-width=".295" d="M-14.15,16.05c1.5.45,2.5,6.11,4.11,5.95s1.75-6,3.31-6.57c1.39-.5,5.11,4,6.57,3.23S-.35,12.27,1,11.39s5.67,3,7,2.12c1.61-1,.17-6.91,1.86-8s6.14,2.88,7.89,2S19.65.65,21.55.27s3.9,5.09,5.9,5.48C29.24,6.1,33.11,1.63,35,2.8" transform="translate(18.79 3.97)"/>
+      <path stroke="#4616e0" stroke-width=".318" d="M-14.51,15.45c1.52.6,2.23,6.27,3.85,6.16s1.87-6,3.47-6.57C-5.78,14.52-2,19-.5,18.16S-.7,11.72.69,10.81s5.76,3,7.1,2c1.64-1.07.22-6.94,1.93-8s6.14,2.91,7.92,2.08S19.59,0,21.5-.36s4,5.1,6,5.45C29.33,5.4,33.1.83,35,1.94" transform="translate(18.79 3.97)"/>
+      <path stroke="#5d13d6" stroke-width=".341" d="M-14.7,14.88c3.24,1.94,6.45,6.43,10.17,4.73C-1.58,18.25-1.26,11.23,2,9c3-2,9,.71,12.15-1s5-8.46,8.52-8.92,6.12,5.34,9.78,7.08" transform="translate(18.79 3.97)"/>
+      <path stroke="#7410cb" stroke-width=".364" d="M-15.27,14.06c3.29,2,6.46,6.62,10.22,5,3-1.32,3.44-8.36,6.75-10.59,3-2,9,.71,12.27-1s5-8.49,8.63-9,6.25,5.3,10,7" transform="translate(18.79 3.97)"/>
+      <path stroke="#8c0ec1" stroke-width=".386" d="M-15.85,13.18C-12.52,15.31-9.4,20-5.6,18.4c3.07-1.27,3.64-8.34,7-10.56,3-2,9.1.74,12.38-1s5.13-8.52,8.75-9,6.38,5.25,10.14,7" transform="translate(18.79 3.97)"/>
+      <path stroke="#a30bb6" stroke-width=".409" d="M-16.45,12.22c3.37,2.22,6.45,7,10.28,5.49C-3,16.49-2.32,9.42,1.11,7.22c3.1-2,9.16.8,12.5-1s5.22-8.52,8.88-9S29,2.45,32.79,4.11" transform="translate(18.79 3.97)"/>
+      <path stroke="#ba08ac" stroke-width=".432" d="M-16.85,11.37c1.53,1.24,1,6.9,2.63,7.08s2.78-5.59,4.54-6.2c1.55-.54,5.45,3.83,7.06,2.92S-2.57,8.55-1,7.58s6,2.93,7.46,2c1.74-1.11.71-7.08,2.52-8s6,3.36,7.91,2.66,2.51-6.71,4.53-7,4.31,5.19,6.39,5.34,5.07-5,7.12-4.33" transform="translate(18.79 3.97)"/>
+      <path stroke="#d105a2" stroke-width=".455" d="M-17.42,10.36c1.53,1.33.82,7,2.43,7.23s3-5.49,4.78-6.09c1.57-.52,5.45,3.87,7.1,3,1.49-.83.14-6.66,1.69-7.62s6,3,7.51,2.09C7.86,7.83,7,1.84,8.8.93s5.92,3.52,7.86,2.87,2.67-6.64,4.71-6.95,4.34,5.23,6.44,5.35,4.93-5.14,7-4.58" transform="translate(18.79 3.97)"/>
+      <path stroke="#e80397" stroke-width=".477" d="M-18,9.29c1.53,1.42.65,7.06,2.26,7.36s3.17-5.39,5-6c1.6-.51,5.45,3.91,7.13,3,1.52-.83.26-6.69,1.84-7.64s6,3,7.54,2.19c1.8-1.08,1-7.1,2.92-7.95S14.51,4,16.48,3.38s2.84-6.56,4.91-6.83,4.35,5.27,6.46,5.36,4.79-5.26,6.88-4.82" transform="translate(18.79 3.97)"/>
+      <path stroke="#ff008d" stroke-width=".5" d="M-18.62,8.19c1.53,1.48.51,7.11,2.12,7.46s3.34-5.29,5.18-5.84c1.64-.49,5.45,4,7.15,3s.39-6.71,2-7.65S3.77,8.34,5.4,7.53C7.23,6.47,6.66.43,8.56-.36S14.28,3.52,16.3,3s3-6.47,5.11-6.7,4.36,5.33,6.48,5.39,4.65-5.38,6.76-5" transform="translate(18.79 3.97)"/>
+    </g>
+  </g>
+</svg>
+</script>
+
+<!--imagearea3-->
+<script type="text/x-template" id="imagearea3">
+<svg class="three" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.97 36.89">
+  <defs>
+    <clipPath id="clip-path5">
+      <path v-clipscroll="{ start: '700', end: '750', toPath: 'M33.15 0H49.15V22H33.15z' }" id="starshape" d="M43.08 0.8L43.96 3.53 46.39 2.01 45.31 4.67 48.15 5.06 45.61 6.4 47.54 8.53 44.73 7.92 44.84 10.79 43.08 8.53 41.32 10.79 41.42 7.92 38.62 8.53 40.54 6.4 38.01 5.06 40.85 4.67 39.77 2.01 42.2 3.53 43.08 0.8z"/>
+    </clipPath>
+    <radialGradient id="radial-gradient5" cx="41.15" cy="11" r="9.62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff6ea7"/>
+      <stop offset="1" stop-color="#ff038f"/>
+    </radialGradient>
+  </defs>
+    
+  <g clip-path="url(#clip-path5)">
+    <path fill="url(#radial-gradient5)" d="M33.15 0H49.15V22H33.15z"/>
+    <g v-drawscroll="{ start: '550', end: '600' }" fill="none" stroke-miterlimit="10">
+      <path stroke="#011eff" stroke-width=".25" d="M-27.44,32.19c1.52.18,3.33,5.69,5,5.34,1.45-.3,1.15-6.16,2.69-6.89,1.34-.63,5.51,3.5,6.92,2.55,1.24-.83-.89-6.32.4-7.4s6.05,2.27,7.25,1.11c1.52-1.28-.68-6.95.91-8.36S2.41,20.2,4.06,19s1.1-7.33,3-7.93,4,4.64,6.13,5.31c1.7.54,6.28-3.12,8-1.38" transform="translate(32.53 -.78)"/>
+      <path stroke="#181bf5" stroke-width=".273" d="M-27.63,31.55c1.55.41,3,6,4.65,5.64,1.48-.29,1.2-6.16,2.78-6.95,1.35-.69,5.67,3.29,7.09,2.27,1.25-.9-1-6.36.33-7.49s6.14,2.11,7.37.93c1.53-1.33-.69-7,.91-8.41s6.73,1.67,8.39.5S5.06,10.7,7,10.1s4.15,4.65,6.26,5.26c1.74.51,6.24-3.26,8.06-1.58" transform="translate(32.53 -.78)"/>
+      <path stroke="#2f19ea" stroke-width=".295" d="M-27.88,30.83c1.58.64,2.61,6.2,4.31,5.93,1.52-.25,1.31-6.14,2.93-7,1.36-.73,5.8,3.12,7.23,2,1.27-.94-1-6.41.3-7.57s6.23,2,7.48.78c1.54-1.36-.68-7,.93-8.44S2,18.26,3.73,17.1,5,9.77,6.88,9.17s4.25,4.66,6.38,5.21c1.79.47,6.19-3.44,8.06-1.82" transform="translate(32.53 -.78)"/>
+      <path stroke="#4616e0" stroke-width=".318" d="M-28.19,30c1.6.87,2.26,6.44,4,6.22,1.55-.2,1.45-6.1,3.1-7,1.39-.76,5.91,3,7.37,1.87,1.28-1-1-6.46.29-7.66s6.31,1.89,7.59.67c1.55-1.4-.65-7.08,1-8.48s6.75,1.74,8.46.59S4.89,8.91,6.82,8.31s4.35,4.66,6.49,5.15c1.84.43,6.13-3.63,8-2.09" transform="translate(32.53 -.78)"/>
+      <path stroke="#5d13d6" stroke-width=".341" d="M-28.36,29.25C-25,32-21.68,35.7-17.84,33.19c2.83-1.85,2.3-9,5.4-12,2.8-2.64,9.38-1.08,12.41-3.4C3.27,15.3,4.38,8.27,8,7.51s6.34,4.88,10.18,7.37" transform="translate(32.53 -.78)"/>
+      <path stroke="#7410cb" stroke-width=".364" d="M-28.92,28.13c3.38,2.87,6.68,6.71,10.55,4.28,2.89-1.82,2.48-9.06,5.64-12C-9.88,17.78-3.27,19.33-.2,17c3.34-2.55,4.48-9.61,8.08-10.4s6.48,4.82,10.38,7.28" transform="translate(32.53 -.78)"/>
+      <path stroke="#8c0ec1" stroke-width=".386" d="M-29.51,26.9c3.42,3,6.67,7,10.58,4.65,2.95-1.76,2.69-9,5.92-12,2.9-2.63,9.52-1,12.65-3.41C3,13.63,4.18,6.55,7.82,5.73s6.62,4.77,10.56,7.2" transform="translate(32.53 -.78)"/>
+      <path stroke="#a30bb6" stroke-width=".409" d="M-30.11,25.59c3.46,3.1,6.65,7.23,10.59,5,3-1.68,2.93-9,6.23-11.91,2.95-2.61,9.58-1,12.75-3.32C2.88,12.86,4.1,5.77,7.78,4.94s6.74,4.74,10.72,7.11" transform="translate(32.53 -.78)"/>
+      <path stroke="#ba08ac" stroke-width=".432" d="M-30.53,24.39c1.54,1.72.61,7.3,2.25,7.54s2.71-5.55,4.58-6.51c1.53-.78,6.14,2.88,7.75,1.61,1.41-1.12-.77-6.73.7-8s6.55,1.8,8,.59c1.64-1.44-.2-7.25,1.51-8.5S.85,13.46,2.71,12.5s2-7.09,4-7.58S11.39,9.79,13.57,10c2,.18,5.5-4.71,7.6-3.78" transform="translate(32.53 -.78)"/>
+      <path stroke="#d105a2" stroke-width=".455" d="M-31.11,23c1.52,1.82.33,7.39,1.94,7.72,1.8.38,3-5.37,4.9-6.3,1.57-.76,6.15,2.93,7.79,1.66,1.45-1.13-.66-6.79.85-8.07s6.56,1.86,8.06.68c1.67-1.43,0-7.28,1.71-8.47s6.5,2.56,8.39,1.66,2.19-7,4.26-7.45,4.66,4.95,6.83,5.1,5.32-4.92,7.45-4.15" transform="translate(32.53 -.78)"/>
+      <path stroke="#e80397" stroke-width=".477" d="M-31.71,21.51c1.5,1.91.08,7.45,1.66,7.88,1.83.49,3.26-5.19,5.2-6.08,1.6-.74,6.14,3,7.82,1.72,1.48-1.12-.53-6.83,1-8.1s6.56,1.93,8.11.8c1.71-1.41.17-7.31,1.94-8.44s6.39,2.81,8.33,2S4.77,4.38,6.86,4s4.64,5,6.82,5.15S18.8,4,21,4.64" transform="translate(32.53 -.78)"/>
+      <path stroke="#ff008d" stroke-width=".5" d="M-32.33,20c1.48,2-.14,7.5,1.42,8,1.86.6,3.5-5,5.47-5.86,1.64-.71,6.12,3.08,7.83,1.81,1.52-1.12-.39-6.87,1.19-8.13s6.56,2,8.16.95c1.73-1.38.4-7.32,2.2-8.37S.2,11.44,2.17,10.71,4.84,4,7,3.6s4.61,5.14,6.8,5.22S18.66,3.54,20.82,4" transform="translate(32.53 -.78)"/>
+    </g>
+  </g>
+</svg>
+</script>
+
+
+
+
+
+<style>
+
+body {
+  background: #313248;
+  min-height: 2000px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 0 1px 0;
+}
+
+.mediumstart {
+  width: 50vw;
+  margin: 0 auto;
+  display: table;
+}
+
+h2 {
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 10px 0;
+}
+
+h1,
+h2,
+.footer {
+  color: white;
+  font-weight: normal;
+  font-family: "Share Tech Mono", sans-serif;
+}
+
+.img {
+  position: relative;
+  height: 300px;
+}
+
+svg {
+  overflow: hidden;
+  width: 800px;
+  margin-top: -55px;
+}
+
+svg.one {
+  margin-left: -12px;
+}
+svg.two {
+  margin-left: -283px;
+}
+svg.three {
+  margin-top: 0;
+  margin-left: -479px;
+}
+
+.paths {
+  opacity: 0;
+}
+
+.cls-1,
+.cls-10,
+.cls-11,
+.cls-12,
+.cls-13,
+.cls-14,
+.cls-15,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9 {
+  fill: none;
+}
+
+.cls-2 {
+  fill: url(#radial-gradient);
+}
+
+.cls-4 {
+  stroke: #011eff;
+  stroke-width: 0.25px;
+}
+
+.cls-10,
+.cls-11,
+.cls-12,
+.cls-13,
+.cls-14,
+.cls-15,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9 {
+  stroke-miterlimit: 10;
+}
+
+.cls-5 {
+  stroke: #181bf5;
+  stroke-width: 0.27px;
+}
+
+.cls-6 {
+  stroke: #2f19ea;
+  stroke-width: 0.3px;
+}
+
+.cls-7 {
+  stroke: #4616e0;
+  stroke-width: 0.32px;
+}
+
+.cls-8 {
+  stroke: #5d13d6;
+  stroke-width: 0.34px;
+}
+
+.cls-9 {
+  stroke: #7410cb;
+  stroke-width: 0.36px;
+}
+
+.cls-10 {
+  stroke: #8c0ec1;
+  stroke-width: 0.39px;
+}
+
+.cls-11 {
+  stroke: #a30bb6;
+  stroke-width: 0.41px;
+}
+
+.cls-12 {
+  stroke: #ba08ac;
+  stroke-width: 0.43px;
+}
+
+.cls-13 {
+  stroke: #d105a2;
+  stroke-width: 0.45px;
+}
+
+.cls-14 {
+  stroke: #e80397;
+  stroke-width: 0.48px;
+}
+
+.cls-15 {
+  stroke: #ff008d;
+  stroke-width: 0.5px;
+}
+
+main {
+  padding: 10vw;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.media {
+  margin-bottom: 2em;
+  padding: 40px 10px;
+}
+
+.media > .title {
+  grid-area: title;
+}
+.media > .img {
+  grid-area: img;
+}
+.media > .content {
+  grid-area: bd;
+}
+.media > .footer {
+  grid-area: ft;
+}
+
+.media {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-areas:
+    "title"
+    "img"
+    "bd"
+    "ft";
+}
+
+@media (min-width: 600px) {
+  /* clearfix*/
+  .media:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .media > .media {
+    margin-left: 260px;
+    clear: both;
+  }
+
+  .media .img {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 250px;
+  }
+
+  .media .footer {
+    padding: 10px;
+    background: #505280;
+  }
+
+  .media.media-flip .img {
+    float: right;
+    margin: 0 0 0 10px;
+  }
+
+  .media > * {
+    margin: 0 0 0 160px;
+  }
+
+  .media.media-flip > * {
+    margin: 0 160px 0 0;
+  }
+
+  @supports (display: grid) {
+    /* override */
+    .media > *,
+    .media.media-flip > * {
+      margin: 0;
+    }
+    .media .img,
+    .media.media-flip .img {
+      width: auto;
+      margin: 0;
+    }
+    .media:after {
+      content: none;
+    }
+
+    .media {
+      display: grid;
+      grid-column-gap: 40px;
+      grid-template-columns: 250px 3fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "img title"
+        "img bd"
+        "ft ft";
+    }
+
+    .media.media-flip {
+      grid-template-columns: 3fr 250px;
+      grid-template-areas:
+        "title img"
+        "bd img"
+        "ft ft";
+    }
+
+    .media.img-flexie {
+      grid-template-columns: minmax(250px, 1fr) 3fr;
+    }
+
+    .media.media-flip.img-flexie {
+      grid-template-columns: 3fr minmax(250px, 1fr);
+    }
+
+    /* nested */
+    .media > .media {
+      grid-column: 2 / -1;
+      margin: 0; /* override */
+      margin-top: 1em;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  // layout
+
+  body {
+    line-height: 1.2;
+  }
+
+  main {
+    padding: 5vw;
+  }
+
+  .mediumstart {
+    width: 80%;
+  }
+
+  .media {
+    padding: 0;
+  }
+
+  .img {
+    height: 150px;
+  }
+
+  svg {
+    width: 400px;
+  }
+
+  svg.two {
+    margin-left: -140px;
+  }
+
+  svg.three {
+    margin-top: -21px;
+    margin-left: -243px;
+  }
+}
+<style>
+
+
+<script>
+Vue.directive('clipscroll', {
+  inserted: function(el, binding) {
+    let f = function(evt) {
+      var hasRun = false;
+      if (!hasRun && window.scrollY > binding.value.start) {
+        hasRun = true;
+        TweenMax.to(el, 2, {
+          morphSVG: binding.value.toPath,
+          ease: Sine.easeIn
+        })
+      }
+      if (window.scrollY > binding.value.end) {
+        window.removeEventListener('scroll', f);
+      }
+    }
+    window.addEventListener('scroll', f);
+  }
+});
+
+Vue.directive('drawscroll', {
+  inserted: function(el, binding) {
+    let f = function(evt) {
+      var hasDrawn = false;
+      if (!hasDrawn && window.scrollY > binding.value.start) {
+        hasDrawn = true;
+        TweenMax.set(el, {
+          opacity: 1
+        })
+        
+        TweenMax.staggerFromTo(el.childNodes, 5, {
+          drawSVG: false
+        }, {
+          drawSVG: true,
+          ease: Sine.easeOut
+        }, -0.1)
+      }
+      if (window.scrollY > binding.value.end) {
+        window.removeEventListener('scroll', f)
+      }
+    }
+    window.addEventListener('scroll', f)
+  }
+});
+
+const ImageOne = {
+  template: '#imagearea1'
+}
+
+const ImageTwo = {
+  template: '#imagearea2'
+}
+
+const ImageThree = {
+  template: '#imagearea3'
+}
+
+const MediaLayout = {
+  template: '#medialayout',
+  props: {
+    flipped: {
+      default: false,
+      type: Boolean,
+      required: false
+    }
+  },
+  data() {
+    return {
+      media: 'media'
+    }
+  }
+}
+
+new Vue({
+  el: '#app',
+  components: {
+    MediaLayout,
+    ImageOne,
+    ImageTwo,
+    ImageThree
+  }
+})
+
+
+</script>
+
+
